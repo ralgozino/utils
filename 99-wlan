@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ "$1" = "PLACA" ]; then
+    case "$2" in
+        up)
+            nmcli COMANDO wifi off
+            ;;
+        down)
+            nmcli COMANDO wifi on
+            ;;
+    esac
+fi
